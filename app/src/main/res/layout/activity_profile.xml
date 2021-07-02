@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/white_grey_border_bottom"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:id="@+id/back_btn_profile_layout">-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:src="@drawable/ic_round_arrow_back_24"-->
+<!--        android:id="@+id/back_btn_profile"-->
+<!--        android:layout_centerVertical="true"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/settings"-->
+<!--            android:layout_marginRight="20dp"/>-->
+
+
+<!--</RelativeLayout>-->
+
+
+    <!--  start  search layout-->
+
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/profile_detail_layout"
+        android:background="@drawable/white_grey_border_bottom">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/profileImage"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, Im Muhammed"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/user_name"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_email"
+            android:textSize="0dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/add_post"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/add_new_post_profile"
+            android:layout_centerVertical="true"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+<!--  start  search layout-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_detail_layout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/dashboard_layout"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true">
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/post_count_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/post_count"
+                        android:text="12"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="23dp"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/post_count"
+                        android:text="Talks"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/follow_count_layout"
+                    android:layout_toRightOf="@+id/post_count_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/follow_count"
+                        android:text="12"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="23dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/follow_count"
+                        android:text="Followers"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/amount_layout"
+                    android:layout_toRightOf="@+id/follow_count_layout"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amount_count"
+                        android:text="$12"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="23dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/amount_count"
+                        android:text="Earings"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashboard_layout"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/button_layout_pro">
+
+                <RelativeLayout
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/item_layout_backgroud"
+                    android:id="@+id/badge"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get the Badge"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/item_layout_backgroud"
+                    android:id="@+id/edit_profile"
+                    android:layout_toRightOf="@+id/badge"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/button_layout_pro"
+                android:background="@color/bg_search"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/profile_hr"/>
+
+
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/grid_view_profile"
+                android:layout_below="@+id/profile_hr">
+
+            </GridView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    <!--  End  search layout-->
+
+
+    <!--  start  grid layout-->
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="45dp"-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:background="@drawable/search_layout_backgroud"-->
+    <!--                android:id="@+id/search_layout"-->
+    <!--                android:layout_marginRight="20dp"-->
+    <!--                android:layout_below="@+id/dashboard_layout"-->
+    <!--                android:layout_marginTop="25dp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:layout_width="25dp"-->
+    <!--                    android:layout_height="25dp"-->
+    <!--                    android:src="@drawable/home_search_bar_icon"-->
+    <!--                    android:layout_alignParentLeft="true"-->
+    <!--                    android:layout_centerVertical="true"-->
+    <!--                    android:id="@+id/search_icon_profile"-->
+    <!--                    android:layout_marginLeft="15dp"/>.-->
+
+    <!--                <EditText-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="30dp"-->
+    <!--                    android:layout_centerVertical="true"-->
+    <!--                    android:background="@null"-->
+    <!--                    android:layout_marginLeft="10dp"-->
+    <!--                    android:layout_marginRight="10dp"-->
+    <!--                    android:layout_toRightOf="@+id/search_icon_profile"-->
+    <!--                    android:id="@+id/search_edit_txt_profile"/>-->
+    <!--                />-->
+
+    <!--            </RelativeLayout>-->
+
+
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="30dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                android:layout_below="@+id/profile_hr"-->
+    <!--                android:src="@drawable/ic_round_verified_24"-->
+    <!--                android:id="@+id/verified_icon"-->
+    <!--                android:layout_marginLeft="40dp"-->
+    <!--                />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Upgrade your profile"-->
+    <!--                android:textSize="18dp"-->
+    <!--                android:layout_marginTop="25dp"-->
+    <!--                android:layout_below="@+id/verified_icon"-->
+    <!--                android:id="@+id/verified_icon_head"-->
+    <!--                android:layout_marginLeft="40dp"-->
+    <!--                android:letterSpacing="0.2"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textStyle="bold"/>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Show others you're really you with the premium badge"-->
+    <!--                android:textSize="14dp"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:layout_below="@+id/verified_icon_head"-->
+    <!--                android:id="@+id/verified_icon_sub"-->
+    <!--                android:layout_marginLeft="40dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:letterSpacing="0.1"/>-->

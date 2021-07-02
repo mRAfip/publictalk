@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_round_arrow_back_24"
+        android:id="@+id/back_btn_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in or Sing up to Public Talk"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/back_btn_login"
+        android:id="@+id/login_page_head"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/item_layout_backgroud"
+        android:layout_below="@id/login_page_head"
+        android:layout_marginTop="30dp"
+        android:id="@+id/email_auth_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/email_txt_layout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Email"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/email_edit_txt"
+                android:inputType="textEmailAddress"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_hint"
+            android:id="@+id/username_hr_line"
+            android:layout_below="@+id/email_txt_layout"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/password_txt_layout"
+            android:layout_below="@+id/username_hr_line"
+            android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/password_edit_txt"
+            android:inputType="textVisiblePassword"
+            />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.karacce.buttom.Buttom
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        app:buttom_type="gradient"
+        app:buttom_gradient_type="linear"
+        app:buttom_gradient_orientation="left_right"
+        app:buttom_gradient_start_color="@color/purple_700"
+        app:buttom_gradient_end_color="@color/purple_700"
+        app:buttom_corner_radius="12dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_below="@+id/email_auth_layout"
+        android:id="@+id/login_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="15dp"
+        android:text="Forget password?"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:id="@+id/forget_password"/>
+
+
+
+
+<!--    or section-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/forget_password"
+        android:layout_marginTop="40dp"
+        android:id="@+id/or_layout">
+
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/text_hint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/text_hint"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+
+<!--    login with other method-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or_layout"
+        android:layout_marginTop="100dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/item_layout_backgroud"
+            android:id="@+id/create_account_layout">
+
+            <ImageView
+                android:id="@+id/mail_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/mail"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Email"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/mail_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/create_account"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/item_layout_backgroud"
+            android:id="@+id/login_with_google_layout"
+            android:layout_below="@+id/create_account_layout"
+            android:layout_marginTop="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/google_logo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/google_logo"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Google"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/google_logo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/login_with_google"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

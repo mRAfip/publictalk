@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:id="@+id/home_id">
+
+
+
+    <com.agrawalsuneet.dotsloader.loaders.SlidingLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:slidingloader_animDur="2000"
+        app:slidingloader_distanceToMove="12"
+        app:slidingloader_dotsDist="6dp"
+        app:slidingloader_dotsRadius="6dp"
+        app:slidingloader_firstDotColor="@color/purple_700"
+        app:slidingloader_secondDotColor="@color/purple_700"
+        app:slidingloader_thirdDotColor="@color/purple_700"
+        android:id="@+id/progress_bar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <!--  start  top layout-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/top_layout">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/home_profile_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="15dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PUBLIC TALK"
+            android:textSize="15dp"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/wordlogo"
+            android:textColor="@color/black"
+            android:letterSpacing="0.3"
+            android:layout_marginTop="20dp"
+            >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_search"
+            android:layout_below="@+id/wordlogo"
+            android:id="@+id/home_hr_1"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_logo_div"
+            android:layout_below="@+id/home_hr_1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/search_layout_backgroud"
+                            android:id="@+id/search_layout"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toLeftOf="@+id/add_idea_icon">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/search_layout_backgroud"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/search_icon_profile"
+                                android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/search_icon_profile"
+                                android:text="Search for ideas"
+                                android:textSize="12dp"
+                                android:textColor="@color/text_hint"/>
+
+                        </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/add_post"
+                                android:id="@+id/add_idea_icon"
+                                android:layout_marginRight="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="23dp"
+                                android:layout_marginBottom="20dp"
+                                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <!--  end  top layout-->
+
+    <!--  start  logo tab layout-->
+
+
+
+
+
+    <!--  end  logo tab layout-->
+
+
+    <!--  Start recycler view layout-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_home_recycler"
+        android:layout_below="@+id/top_layout"
+        tools:listitem="@layout/result_main_item"
+        android:clipToPadding="false"/>
+
+
+
+
+    <!--  Start recycler view layout-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Daily inspiration"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/home_head"
+        android:layout_below="@+id/post_home_recycler"/>
+
+    <!--Slider view for displaying our sliding images-->
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorEnabled="false"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        android:layout_below="@+id/home_head"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

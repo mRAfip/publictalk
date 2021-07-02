@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemSearchActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/white_grey_border_bottom"
+        android:layout_alignParentTop="true"
+        android:id="@+id/top_layout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/search_text_">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_round_arrow_back_24"
+            android:id="@+id/back_item_search"/>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/back_item_search"
+            android:hint="Eg: Chocolate "
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:id="@+id/txtSearch"
+            android:layout_centerVertical="true"
+            android:inputType="textAutoCorrect"
+            android:imeOptions="actionSearch"
+            />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_search_grid"
+        android:numColumns="2"
+        android:layout_below="@+id/top_layout"
+        android:layout_alignParentBottom="true"
+        >
+    </GridView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

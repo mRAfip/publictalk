@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="3dp"
+        android:background="@drawable/white_grey_border_bottom"
+        android:id="@+id/top_layout_menu">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_round_arrow_back_24"
+            android:id="@+id/back_item_menu"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/menu_logo_div"
+        android:layout_below="@+id/top_layout_menu"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logoblack"
+            android:id="@+id/menu_logo_black"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_round_keyboard_arrow_up_24"
+            android:id="@+id/up_arrow"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/menu_logo_black" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/menu_logo_div">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/menu_home_item"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_hint"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/menu_home_item"
+            android:id="@+id/line_layout"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_layout"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profile_menu_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_marginBottom="25dp"
+                android:id="@+id/menu_profile_item"
+                android:layout_marginLeft="20dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_outline_account_circle_24"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_menu_layout"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginBottom="25dp"
+                android:id="@+id/logoutBtn"
+                android:layout_marginLeft="20dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

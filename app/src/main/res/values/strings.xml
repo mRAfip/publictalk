@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Public Talk</string>
+    <string name="initStr"> "An untapped goldmine of content ideas" </string>
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Search by keyword!</string>
+    <string name="slide_1_desc">Start searching by industry, Product, Topic ...!</string>
+
+    <string name="slide_2_title">Discover people mindset</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Pick the trending questions</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">Start creating content</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+    <string name="account">Account</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="billing">Billing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "869807469220",
+    "project_id": "public-talk-4030e",
+    "storage_bucket": "public-talk-4030e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869807469220:android:ff0ac877ed17e229df2c31",
+        "android_client_info": {
+          "package_name": "com.example.publictalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869807469220-q6gh785jkq3btc57k1821hj9icno5mq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.publictalk",
+            "certificate_hash": "4d2662692369d543af5b8bddcd4f2a436afff4bf"
+          }
+        },
+        {
+          "client_id": "869807469220-6h2a7240u0paas3j7aq4b8pr9doguf89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC923KuX2quxloi7gGFltRAchWon1XUwSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869807469220-6h2a7240u0paas3j7aq4b8pr9doguf89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

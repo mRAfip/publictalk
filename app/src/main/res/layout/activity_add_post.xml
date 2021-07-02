@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customprogress="http://schemas.android.com/tools"
+    tools:context=".AddPostActivity">
+
+    <!--  start  top layout-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="3dp"
+        android:background="@drawable/white_grey_border_bottom"
+        android:layout_alignParentTop="true"
+        android:id="@+id/top_layout_add_post">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoot your idea"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/user_name_add_post"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoot your idea"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/photo_url_addpost_dummy"
+            android:textSize="0dp"
+            />
+
+
+
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="PUBLIC TALK"-->
+<!--            android:textSize="15dp"-->
+<!--            android:layout_marginLeft="18dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:id="@+id/wordlogo"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:letterSpacing="0.3"-->
+<!--            >-->
+<!--        </TextView>-->
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/profile_image_add_post"/>
+
+
+
+
+    </RelativeLayout>
+    <!--  end  top layout-->
+
+    <!--  start  add post layout-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout_add_post">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Shoot your idea"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@+id/top_layout_add_post"-->
+<!--        android:id="@+id/add_post_page_head"-->
+<!--        android:textSize="22dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        />-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoot your idea"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/add_post_page_head"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Related area/ Topic/ Product"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/category_heading"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/item_layout_backgroud"
+        android:layout_below="@id/category_heading"
+        android:layout_marginTop="10dp"
+        android:id="@+id/info_category_layout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="Eg: Social media"
+            android:layout_alignParentTop="true"
+            android:id="@+id/category_topic"
+            android:layout_marginLeft="10dp"
+            android:focusedByDefault="true"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give a snapshot head (max=50)"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/info_category_layout"
+        android:id="@+id/post_heading"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/item_layout_backgroud"
+        android:layout_below="@id/post_heading"
+        android:layout_marginTop="10dp"
+        android:id="@+id/post_heading_layout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:id="@+id/post_heading_txt"
+            android:layout_marginLeft="10dp"
+            android:maxLength="50"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add more details"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/post_heading_layout"
+        android:id="@+id/post_deatil_head"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/item_layout_backgroud"
+        android:layout_below="@id/post_deatil_head"
+        android:layout_marginTop="10dp"
+        android:id="@+id/post_deatil_layout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/post_deatil_txt"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+
+    <com.karacce.buttom.Buttom
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Post"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:buttom_type="gradient"
+        app:buttom_gradient_type="linear"
+        app:buttom_gradient_orientation="left_right"
+        app:buttom_gradient_start_color="#E20558"
+        app:buttom_gradient_end_color="#FC4A1F"
+        app:buttom_corner_radius="12dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_below="@+id/post_deatil_layout"
+        android:id="@+id/post_button"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
